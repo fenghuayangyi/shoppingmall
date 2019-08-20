@@ -50,6 +50,7 @@ public class PictureServiceImpl implements PictureService {
 			newName = newName + oldName.substring(oldName.lastIndexOf("."));
 			//图片上传
 			String imagePath = new DateTime().toString("/yyyy/MM/dd");
+			//System.out.print("ddddebug:"+FTP_BASE_PATH+","+imagePath+","+newName);
 			boolean result = FtpUtil.uploadFile(FTP_ADDRESS, FTP_PORT, FTP_USERNAME, FTP_PASSWORD, 
 					FTP_BASE_PATH, imagePath, newName, uploadFile.getInputStream());
 			//返回结果

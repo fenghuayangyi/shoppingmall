@@ -86,6 +86,7 @@ public class ItemServiceImpl implements ItemService {
 		item.setUpdated(new Date());
 		//插入到数据库
 		itemMapper.insert(item);
+		
 		//添加商品描述信息
 		TaotaoResult result = insertItemDesc(itemId, desc);
 		if (result.getStatus() != 200) {
