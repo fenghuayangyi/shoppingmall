@@ -1,4 +1,4 @@
-package com.taotao.common.utils;
+package com.sh.taotao.common.utils;
 
 import java.io.IOException;
 import java.net.URI;
